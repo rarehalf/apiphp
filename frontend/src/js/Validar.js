@@ -37,8 +37,10 @@ function validar(event) {
     })
     .then((response) => response.json())
     .then((dados) => {
-        console.log(dados)
+        alert(dados.token)
+    })
+    .catch((error) => {
+        alert(error)
     })
 }
 }
-
