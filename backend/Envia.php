@@ -3,12 +3,12 @@
 $postdata = file_get_contents("php://input");
 
 
-if(isset($postdata) && $postdata != "") {
+if(isset($postdata) && $postdata != " ") {
     $data = json_decode($postdata);
 
     $cpf = $data->cpf;
 
-    if($cpf != ""){
+    if($cpf != " "){
         $token = base64_encode($cpf);
 
         http_response_code(200);
