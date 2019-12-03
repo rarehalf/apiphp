@@ -9,5 +9,4 @@ $cpf = $data->cpf;
 echo json_encode([
     'msg' -> 'token gerado com sucesso',
     'token' -> 'TOKEN'
-    echo
 ]);
