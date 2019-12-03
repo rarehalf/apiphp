@@ -44,6 +44,6 @@ function enviar() {
         console.log(dados.token)
     })
     .catch((error) => {
-        alert(error)
+        alert("Algo está errado")
     })
 }

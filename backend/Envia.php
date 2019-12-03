@@ -8,7 +8,7 @@ if(isset($postdata) && $postdata != " ") {
 
     $cpf = $data->cpf;
 
-    if($cpf != " "){
+    if($cpf !== " "){
         $token = base64_encode($cpf);
 
         http_response_code(200);
