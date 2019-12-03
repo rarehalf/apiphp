@@ -24,7 +24,9 @@ function validar(event) {
         return false;
     }
     
-    function enviar() {
+}
+
+function enviar() {
         
 
     let dados = {
@@ -42,5 +44,4 @@ function validar(event) {
     .catch((error) => {
         alert(error)
     })
-}
 }
