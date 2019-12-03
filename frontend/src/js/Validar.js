@@ -27,19 +27,21 @@ function validar(event) {
 }
 
 function enviar() {
-        
+    
 
     let dados = {
         cpf: formulario.cpf.value
     }
 
-    fetch('Envia.php', {
+    fetch('http://localhost/TesteDev/backend/Envia.php', {
         method: 'post',
         body: JSON.stringify(dados)
     })
     .then((response) => response.json())
     .then((dados) => {
+        var token = dados.token;
         alert(dados.token)
+        console.log(dados.token)
     })
     .catch((error) => {
         alert(error)
