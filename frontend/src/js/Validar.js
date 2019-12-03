@@ -1,7 +1,7 @@
 
 function validar(event) {
 
-    var cpf = formulario.cpf.value;
+    let cpf = formulario.cpf.value;
 
     if (cpf === "") {
         console.log('Preencha o campo com seu CPF');
